@@ -1,0 +1,87 @@
+# Schema only. Experimental parameter values are intentionally withheld.
+template_only: true
+seed: null
+device: null
+dataset:
+  root: null
+  img_size: null
+  batch_size: null
+  num_workers: null
+model:
+  in_ch: null
+  base_ch: null
+  num_experts: null
+  use_region_router: null
+  use_source_router: null
+  use_spatial_gate: null
+  expert_mode: null
+  semantic_expand: null
+  use_experts: null
+  router_mode: null
+train:
+  epochs: null
+  lr: null
+  min_lr: null
+  weight_decay: null
+  log_dir: null
+  ckpt_dir: null
+  save_freq: null
+loss:
+  lambda_struct: null
+  lambda_grad: null
+  lambda_sobel: null
+  lambda_ssim: null
+  lambda_sem: null
+  lambda_moe: null
+  lambda_unc: null
+  lambda_info: null
+  lambda_contrast: null
+  lambda_frequency: null
+  lambda_lowfreq: null
+  lambda_entropy: null
+  use_quality_adaptive: null
+  qa_strength: null
+  qa_min_scale: null
+  qa_max_scale: null
+  info_pool_size: null
+  info_contrast_weight: null
+  info_corr_weight: null
+  use_local_info_guidance: null
+  info_quality_temperature: null
+  info_target_mix: null
+  info_content_weight: null
+  contrast_pool_sizes: null
+  contrast_global_weight: null
+  contrast_target_boost: null
+  lowfreq_pool_sizes: null
+  lowfreq_quality_temperature: null
+  entropy_target_boost: null
+  entropy_margin: null
+  entropy_mad_weight: null
+  entropy_local_weight: null
+  entropy_local_pool_sizes: null
+inference:
+  root: null
+  img_size: null
+  checkpoint: null
+  save_dir: null
+eval:
+  vis_dir: null
+  ir_dir: null
+  fused_dir: null
+  save_dir: null
+  csv_path: null
+  target_size: null
+  batch_size: null
+  num_workers: null
+selection:
+  primary_metric: null
+  lower_is_better: null
+  score_weights:
+    EN: null
+    AG: null
+    SD: null
+    SCD: null
+    Qabf: null
+    VIF: null
+    SF: null
