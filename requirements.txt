@@ -1,6 +1,2 @@
 torch
-numpy
-opencv-python
-PyYAML
-tqdm
 tensorboard

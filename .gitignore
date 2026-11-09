@@ -33,4 +33,3 @@ Thumbs.db
 data/
 private/
 **/configs/*.yaml
-!ce_idr/configs/example.yaml

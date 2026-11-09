@@ -1,21 +1,6 @@
-import yaml
-
-
-def load_config(path):
-    with open(path, "r", encoding="utf-8") as handle:
-        config = yaml.safe_load(handle)
-    if not isinstance(config, dict):
-        raise ValueError("Expected a YAML configuration mapping.")
-    if config.get("template_only", False):
-        raise ValueError(
-            "This is a schema-only template. Detailed settings are withheld; "
-            "supply a complete private configuration."
-        )
-    return config
-
-
 def build_model(model_config):
-    from models.fusion_model import CEIDR
+    """Construct the network from an in-memory mapping of private model settings."""
+    from .models.fusion_model import CEIDR
 
     return CEIDR(
         in_ch=model_config["in_ch"],
